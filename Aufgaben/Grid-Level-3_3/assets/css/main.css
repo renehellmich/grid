@@ -8,8 +8,9 @@
     "div5 div6 img-kitchen";
 }
 
+/* !Width muss noch angepasst werden! */
 .main img {
-    width: calc(85vw * .6);
+    width: calc(60vw * .6);
 }
 
 .main h2 {

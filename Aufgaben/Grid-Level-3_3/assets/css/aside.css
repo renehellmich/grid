@@ -1,0 +1,37 @@
+.aside {
+    display: grid;
+    grid-template-rows: 5% 95%;
+    grid-template-areas: 
+    "aside_h4"
+    "aside_section";
+    margin-left: 15px;
+}
+
+.aside h4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aside__section_flex {
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+.aside__section_flex div:nth-child(1) p {
+    font-size: 50px;
+    text-align: center;
+    border: 5px solid black;
+    padding: 20px;
+}
+.aside__section_flex div:nth-child(2) {
+    text-align: center;
+    border: 5px solid black;
+    padding: 20px;
+}
+.aside__section_flex div:nth-child(2) {
+    text-align: center;
+    border: 5px solid black;
+    padding: 20px;
+}
