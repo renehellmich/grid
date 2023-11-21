@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --padding-global: 5px;
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "img1 img2 img3"
+    "img4 img5 img6"
+    "img7 img8 img9"
+    "img10 img11 img12";
+    gap: 2px;
+    padding: var(--padding-global);
+    /* width: 50vw; */
+}
+
+
+.div__container {
+    width: calc(100vw / 3 - var(--padding-global));
+    position: relative;
+    width: 100%;
+}
+
+.div__container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.div__overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.div__container:hover .div__overlay {
+    height: 100%;
+    opacity: 1;
+}
+
+p {
+    color: white;
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    transition: 0.3s ease;
+    display: block;
+}
+
+.div__overlay :hover p {
+    visibility: visible;
+}
+
+
+
+
+.div1{
+    grid-area: img1;
+}
+.div2{
+    grid-area: img2;
+}
+.div3{
+    grid-area: img3;
+}
+.div4{
+    grid-area: img4;
+}
+.div5{
+    grid-area: img5;
+}
+.div6{
+    grid-area: img6;
+}
+.div7{
+    grid-area: img7;
+}
+.div8{
+    grid-area: img8;
+}
+.div9{
+    grid-area: img9;
+}
+.div10{
+    grid-area: img10;
+}
+.div11{
+    grid-area: img11;
+}
+.div12{
+    grid-area: img12;
+}
