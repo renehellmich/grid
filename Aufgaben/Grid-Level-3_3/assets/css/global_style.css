@@ -1,0 +1,72 @@
+/* ! Weight: 700 */
+@font-face {
+    font-family: 'Cormorant_Bold';
+    src: url('/fonts/CormorantGaramond-Bold.ttf');
+}
+/* ! Weight: 400 */
+@font-face {
+    font-family: 'Cormorant_Regular';
+    src: url('../fonts/CormorantGaramond-Regular.ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--color-global);
+}
+
+:root {
+    --color-global: #e9e9e0;
+    --color-font: #333333;
+    --color-a: #737B80;
+    --padding-global: 50px;
+}
+
+html{
+    font-size: 16px;
+}
+
+header {
+    font-family: 'Cormorant_Regular';
+    font-size: 16px;
+}
+h1 {
+    font-family: 'Cormorant_Bold';
+    font-size: 32px;
+}
+
+h2 {
+    font-family: 'Cormorant_Bold';
+    font-size: 36px;
+}
+
+h3 {
+    font-family: 'Cormorant_Bold';
+    font-size: 24px;
+}
+
+h4 {
+    font-family: 'Cormorant_Bold';
+    font-size: 18px;
+}
+
+p {
+    font-family: 'Cormorant_Regular';
+    font-size: 24px;
+}
+
+a {
+    font-family: 'Cormorant_Regular';
+    font-size: 20px;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 85vw 15vw;
+    grid-template-rows: 20vh 80;
+    grid-template-areas: 
+    "header header"
+    "main aside";
+}
+

@@ -1,0 +1,18 @@
+.main article{
+    display: grid;
+    grid-template-columns: 30% 30% 60%;
+    /* grid-template-rows: 1fr 1fr 2fr; */
+    grid-template-areas: 
+    "div1 div2 img-kitchen"
+    "div3 div4 img-kitchen"
+    "div5 div6 img-kitchen";
+}
+
+.main img {
+    width: calc(85vw * .6);
+}
+
+.main h2 {
+    padding: 20px 0;
+    text-align: center;
+}
