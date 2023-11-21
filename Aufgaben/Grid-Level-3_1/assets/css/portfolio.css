@@ -1,0 +1,43 @@
+.sc__portfolio {
+    display: grid;
+    grid-template-columns: 40vw 60vw;
+    grid-template-areas: 
+    "left right";
+    justify-content: center;
+    align-items: center;
+}
+
+.div__portfolio__img {
+    padding: 40px 60px 40px 20px;
+}
+.div__portfolio__img img {
+    object-fit: cover;
+    width: 60vw;
+}
+.div__portfolio__description {
+    grid-area: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 40px 20px 40px 60px;
+}
+
+.div__portfolio__description h2 {
+    color: var(--color-h2)
+}
+
+.div__portfolio__description p {
+    font-size: 12px;
+    line-height: 175%;
+    color: var(--color-p);
+}
+
+.div__portfolio__description a {
+    display: block;
+    background-color: var(--color-read-more);
+    color: white;
+    width: 150px;
+    text-align: center;
+    padding: 10px 20px 10px 20px;
+}

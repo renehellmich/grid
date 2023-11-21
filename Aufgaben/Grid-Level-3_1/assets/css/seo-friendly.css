@@ -1,0 +1,45 @@
+.sc__seo-friendly {
+    display: grid;
+    grid-template-columns: 60vw 40vw;
+    grid-template-areas: 
+    "left right";
+    justify-content: center;
+    align-items: center;
+}
+
+.div__seo-friendly__img {
+    padding: 40px 60px 40px 20px;
+}
+.div__seo-friendly__img img {
+    object-fit: cover;
+    width: 60vw;
+}
+.div__seo-friendly__description {
+    grid-area: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 40px 20px 40px 60px;
+}
+
+.div__seo-friendly__description h2 {
+    color: var(--color-h2)
+}
+
+.div__seo-friendly__description p {
+    font-size: 12px;
+    line-height: 175%;
+    color: var(--color-p);
+}
+
+.div__seo-friendly__description a {
+    display: block;
+    background-color: var(--color-read-more);
+    color: white;
+    width: 150px;
+    text-align: center;
+    padding: 10px 20px 10px 20px
+}
+
+
